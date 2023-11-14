@@ -4,14 +4,14 @@ Run com.minhxuvi.microservices.currencyconversionservice.CurrencyConversionServi
 
 ## Resources
 
-- http://localhost:8000/currency-exchange/from/USD/to/INR
+- http://localhost:8000/currency-exchange/from/USD/to/VND
 
 ```json
 {
   "id": 10001,
   "from": "USD",
-  "to": "INR",
-  "conversionMultiple": 65.00,
+  "to": "VND",
+  "conversionMultiple": 24355.00,
   "environmentInfo": "NA"
 }
 ```
@@ -53,5 +53,5 @@ create table exchange_value
 
 #### Basic
 ```
-docker container run --publish 8000:8000 in28min/currency-exchange:0.0.1-SNAPSHOT
+docker container run --publish 8000:8000 minhxuvi/currency-exchange:0.0.1-SNAPSHOT
 ```
