@@ -91,7 +91,7 @@ az aks get-credentials --name <<MyManagedCluster>> --resource-group <<MyResource
 
 ```
 aws configure
-aws eks --region us-east-1 update-kubeconfig --name in28minutes-cluster 
+aws eks --region us-east-1 update-kubeconfig --name minhxuvi-cluster 
 kubectl get pods
 kubectl get svc
 kubectl get serviceaccounts
@@ -123,8 +123,8 @@ ls /Users/rangakaranam/.ssh/id_rsa.pub
 #### Create Resource Group, Storage Account and Storage Container
 
 ```
-az group create -l southeastasia -n In28minutesK8sResourceGroup
-az storage account create -n In28minutesK8sStorageAccount -g In28minutesK8sResourceGroup -l southeastasia --sku Standard_LRS
+az group create -l southeastasia -n minhxuviK8sResourceGroup
+az storage account create -n minhxuviK8sStorageAccount -g minhxuviK8sResourceGroup -l southeastasia --sku Standard_LRS
 az storage container create -n devterraformstatestorage --account-name <<storage_account_name>> --account-key <<storage_account_key>>
 
 ```
