@@ -3,11 +3,11 @@ variable client_secret {}
 variable ssh_public_key {}
 
 variable environment {
-    default = "dev"
+  default = "dev"
 }
 
 variable location {
-    default = "westeurope"
+  default = "southeastasia"
 }
 
 variable node_count {
