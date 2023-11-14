@@ -25,7 +25,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'minhxuvi-docker-hub'
-        repository: 'minhxuvi/currency-exchange-devops'
+        repository: 'minhxuvi/demo-docker-java'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
@@ -59,7 +59,7 @@ stages:
         kubernetesServiceConnection: 'azure-kubernetes-connection'
         namespace: 'default'
         manifests: '$(System.ArtifactsDirectory)/configuration/kubernetes/deployment.yaml'
-        containers: 'minhxuvi/currency-exchange-devops:$(tag)'
+        containers: 'minhxuvi/demo-docker-java:$(tag)'
 # Stage 2
 # Download the K8S Files
 # Deploy to K8S Cluster with Docker Image

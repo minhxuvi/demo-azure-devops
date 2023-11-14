@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: currency-exchange
-        image: minhxuvi/currency-exchange-devops
+        image: minhxuvi/demo-docker-java
         imagePullPolicy: IfNotPresent
         ports:
         - name: liveness-port

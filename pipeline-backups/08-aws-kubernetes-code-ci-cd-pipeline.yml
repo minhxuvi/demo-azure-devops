@@ -20,7 +20,7 @@ stages:
       displayName: Build and Push an image
       inputs:
         containerRegistry: 'minhxuvi-docker-hub'
-        repository: 'minhxuvi/currency-exchange-devops'
+        repository: 'minhxuvi/demo-docker-java'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
@@ -60,7 +60,7 @@ stages:
         kubernetesServiceConnection: 'aws-kubernetes-cluster-service-connection'
         namespace: 'default'
         manifests: '$(System.ArtifactsDirectory)/configuration/kubernetes/deployment.yaml'
-        containers: minhxuvi/currency-exchange-devops:$(tag)
+        containers: minhxuvi/demo-docker-java:$(tag)
 
 # Deploy
 # Download 
