@@ -1,8 +1,8 @@
 # aws --version
 # aws eks --region us-east-1 update-kubeconfig --name minhxuvi-cluster
 # Uses default VPC and Subnet. Create Your Own VPC and Private Subnets for Prod Usage.
-# terraform-backend-state-minhxuvi-123
-# AKIA4AHVNOD7OOO6T4KI
+# terraform-backend-state-minhxuvi
+# AKIAVZ6XZCUMQNUUSH7B
 
 
 terraform {
@@ -32,7 +32,7 @@ module "minhxuvi-cluster" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "minhxuvi-cluster"
   cluster_version = "1.14"
-  subnets         = ["subnet-3f7b2563", "subnet-4a7d6a45"] #CHANGE
+  subnets         = ["subnet-0cea23d26d4074da3", "subnet-0ec89d123f34e0356"] #CHANGE
   #subnets = data.aws_subnet_ids.subnets.ids
   vpc_id          = aws_default_vpc.default.id
 
@@ -43,7 +43,7 @@ module "minhxuvi-cluster" {
       instance_type = "t2.micro"
       max_capacity  = 5
       desired_capacity = 3
-      min_capacity  = 3
+      min_capacity  = 2
     }
   ]
 }
