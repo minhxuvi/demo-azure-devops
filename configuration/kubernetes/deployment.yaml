@@ -1,3 +1,6 @@
+# This file contains the Kubernetes deployment and service configuration for the currency-exchange application.
+# The deployment specifies the number of replicas, resources, probes, and image for the application container.
+# The service exposes the application on port 8000 and uses a LoadBalancer type to distribute traffic to the replicas.
 apiVersion: apps/v1
 kind: Deployment
 metadata:

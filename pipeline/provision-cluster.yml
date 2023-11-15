@@ -1,3 +1,9 @@
+# This YAML file contains the Azure DevOps pipeline configuration for provisioning a Kubernetes cluster using Terraform on Azure.
+# The pipeline includes three TerraformCLI tasks: init, apply, and destroy.
+# The init task initializes the Terraform backend and downloads the necessary modules.
+# The apply task creates the Kubernetes cluster using the specified variables and the public key downloaded from Azure DevOps secure files.
+# The destroy task destroys the Kubernetes cluster created by the apply task.
+# The pipeline is triggered on changes to the main branch and runs on an Ubuntu VM.
 trigger:
 - main
 

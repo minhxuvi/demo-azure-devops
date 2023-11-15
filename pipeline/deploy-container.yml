@@ -1,3 +1,4 @@
+# This YAML file defines an Azure DevOps pipeline that builds a Docker image, pushes it to a container registry, and deploys it to a Kubernetes cluster.
 # Stage 1
 # Build Docker Image
 trigger:

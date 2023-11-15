@@ -1,3 +1,7 @@
+# This file contains the Terraform outputs for the Azure Kubernetes Service (AKS) cluster.
+# The outputs include sensitive information such as client key, client certificate, cluster CA certificate, cluster username, cluster password, kube config, and host.
+# These outputs can be used by other Terraform modules or external tools to interact with the AKS cluster.
+# FILEPATH: /Users/moc/Projects/demo-azure-devops/configuration/iaac/azure/kubernetes/outputs.tf
 output "client_key" {
   value = azurerm_kubernetes_cluster.terraform-k8s.kube_config.0.client_key
   sensitive = true
