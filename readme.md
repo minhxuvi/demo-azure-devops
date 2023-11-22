@@ -1,3 +1,8 @@
+https://github.com/in28minutes/course-material
+https://github.com/in28minutes/devops-master-class
+https://github.com/in28minutes/azure-devops-kubernetes-terraform-pipeline
+https://github.com/in28minutes/roadmaps/blob/main/README.md#devops-roadmap
+
 # Currency Exchange Micro Service - H2
 
 Run com.minhxuvi.microservices.currencyconversionservice.CurrencyConversionServiceApplicationH2 as a Java Application.
